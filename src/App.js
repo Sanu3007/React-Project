@@ -10,6 +10,7 @@ import ClassClick from './components/ClassClick'
 import EventBind from './components/EventBind'
 import ParentComponent from './components/ParentComponent'
 import ListRender from './components/ListRender'
+import StyleSheet from './components/StyleSheet'
 
 function App() {
   const p1={name:"Sanu",age:20};
@@ -19,7 +20,8 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Hello, Welcome To React World
-          <ListRender/>
+          <StyleSheet status='false'/>
+          {/*<ListRender/>
           {/*<ParentComponent/>
           {/*<EventBind/>*/}
            {/*<FunctionClick/> 
