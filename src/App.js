@@ -1,24 +1,23 @@
 import React from 'react';
 
 import './App.css';
-import Form from './components/Form'
-import CheckBox from './components/CheckBox'
-import RadioButton from './components/RadioButton'
-import LifecycleA from './components/LifecycleA'
-import FragmentDemo from './components/FragmentDemo'
-import Table from './components/Table'
+import ParentComp from './components/ParentComp';
+import RefDemo from './components/RefDemo'
+import ParentInput from './components/ParentInput';
+import FRParentInput from './components/FRParentInput';
+import ClickCounter from './components/ClickCounter';
+import HoverCounter from './components/HoverCounter';
+
 function App() {
   
   return (
     <div className="App">
-      
-      <Table/>
-      {/*<FragmentDemo/>
-      {/*<LifecycleA/>
-      {/*<CheckBox/><br/>
-      <RadioButton/>*/}
-
-      {/*<Form/>*/}
+      <ClickCounter name="Sanu"/>
+      <HoverCounter/>
+      {/*<FRParentInput/>
+      {/*<ParentInput/>
+      {/*<RefDemo/>
+     {/*<ParentComp/>*/}
     </div>
   );
 }
