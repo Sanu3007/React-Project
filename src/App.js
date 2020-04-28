@@ -1,23 +1,31 @@
 import React from 'react';
 
 import './App.css';
-import ParentComp from './components/ParentComp';
-import RefDemo from './components/RefDemo'
-import ParentInput from './components/ParentInput';
-import FRParentInput from './components/FRParentInput';
-import ClickCounter from './components/ClickCounter';
-import HoverCounter from './components/HoverCounter';
+import ClickCounter2 from './components/ClickCounter2';
+import HoverCounter2 from './components/HoverCounter2';
+import User from './components/User';
+import RenderProps from './components/RenderProps';
 
 function App() {
   
   return (
     <div className="App">
-      <ClickCounter name="Sanu"/>
-      <HoverCounter/>
-      {/*<FRParentInput/>
-      {/*<ParentInput/>
-      {/*<RefDemo/>
-     {/*<ParentComp/>*/}
+      <RenderProps 
+          render={(count,IncrementCount)=>(
+                    <ClickCounter2 count={count}
+                     IncrementCount={IncrementCount} />
+                     )}
+                     />
+
+      <RenderProps 
+          render={(count,IncrementCount)=>(
+                    <HoverCounter2 count={count}
+                     IncrementCount={IncrementCount} />
+                     )}
+                     />              
+      {/*<ClickCounter2/>
+      <HoverCounter2/>
+      <User name={(istrue)=>istrue ?"Sanu":"Guest"}/>*/}
     </div>
   );
 }
